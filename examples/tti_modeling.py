@@ -65,7 +65,7 @@ op()
 
 scale = 1e-2
 
-plt.figure(figsize=(15,15))
+plt.figure(figsize=(10,10))
 plt.subplot(221)
 plt.imshow(v[0].data[0].T, vmin=-scale, vmax=scale, cmap="seismic")
 plt.title("vx")
@@ -79,5 +79,6 @@ plt.subplot(224)
 plt.imshow(tau[0, 1].data[0].T, vmin=-scale, vmax=scale, cmap="seismic")
 plt.title("txz")
 plt.tight_layout()
+plt.savefig("2DETTI.png", bbox_inches="tight")
 
 plt.show()
