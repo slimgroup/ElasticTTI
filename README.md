@@ -6,6 +6,16 @@ This repository contains a simple implementation of the 2D elastic TTI wave equa
 
 - `divrot, gradrot`: custom divergence and gradient operator using a combination of standard FD and 45 degree rotated FD for better accuracy and less dispersion.
 
+## Prerequisite
+
+This codes requires a few packages to be installed: `numpy, matplotlib, sympy` and mostly `Devito`. You will need to install `Devito` with the examples since this uses some of the utilities in it. To do so you can follow the `cnda` install instructions or do the following:
+
+```
+git clone https://github.com/devitocodes/devito
+cd devito
+pip install -e .
+```
+
 ## Example
 
 We provide a single simple example in `examples/tti_modeling.py` that can be run from the main directory as:
